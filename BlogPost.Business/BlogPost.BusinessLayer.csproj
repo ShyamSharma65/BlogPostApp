@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlogPost.DataAccess\BlogPost.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\BlogPost.SharedLibrary\BlogPost.SharedLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
