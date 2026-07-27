@@ -1,6 +1,6 @@
-﻿namespace BlogPost.API.Models.Domain
+namespace BlogPost.SharedLibrary.Models
 {
-    public class BlogPostModel
+    public class BlogPostDto
     {
         public long Id { get; set; }
         public string BlogPostName { get; set; } = string.Empty;

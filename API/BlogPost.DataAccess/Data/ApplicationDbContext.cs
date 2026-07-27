@@ -8,7 +8,14 @@ namespace BlogPost.API.Data
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
+
         public DbSet<BlogPostModel> BlogPosts { get; set; }
         public DbSet<Category> Categories { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<BlogPostModel>().ToTable("BlogPosts");
+            modelBuilder.Entity<Category>().ToTable("Categories");
+        }
     }
 }

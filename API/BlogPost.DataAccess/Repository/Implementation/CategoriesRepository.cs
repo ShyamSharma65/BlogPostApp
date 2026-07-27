@@ -2,6 +2,7 @@
 using BlogPost.API.Models.Domain;
 using BlogPost.API.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace BlogPost.API.Repository.Implementation
 {

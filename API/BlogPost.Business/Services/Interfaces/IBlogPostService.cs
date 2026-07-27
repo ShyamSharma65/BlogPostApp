@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BlogPost.SharedLibrary.Models;
 
 namespace BlogPost.BusinessLayer.Services.Interfaces
 {
-    internal interface IBlogPostService
+    public interface IBlogPostService
     {
+        Task<List<BlogPostDto>> GetAllAsync();
+        Task<BlogPostDto?> GetByIdAsync(long id);
+        Task<BlogPostDto> SaveAsync(BlogPostDto blogPost);
+        Task<BlogPostDto?> UpdateAsync(long id, BlogPostDto blogPost);
+        Task<bool> DeleteAsync(long id);
     }
 }
